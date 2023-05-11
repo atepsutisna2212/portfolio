@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .dark\:text-white {
+    color: #fff;
+  }
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
