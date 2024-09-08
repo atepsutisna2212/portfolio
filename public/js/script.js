@@ -150,7 +150,7 @@ function setDataKeahlian() {
         data += `
                  <div class="w-full px-4 md:w-1/2 xl:w-1/3 ">
                     <div class="bg-white dark:bg-slate-700 rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="${item.img}" alt="" class="w-full">
+                        <img src="${item.img}" alt="" class="w-full bg-white">
                         <div class="py-8 px-6">
                             <h3
                                 class=" mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">
@@ -266,6 +266,11 @@ function setDataProject() {
 
 //pengalaman
 const dataListPengalaman = [
+    {
+        img: "public/img/pengalaman/arkamaya.jpg",
+        title: "PT. Arkamaya",
+        content: "Pada Perusahaan ini saya sebagai Staff Web Programmer (2023-2024). Disini saya bekerja dengan tim dan pengerjaan tugasnya fullstack bagian beck-end dengan framework bahasa pemrograman PHP atau .Net. Pada bagian front-end kebanyakan menggunakan template dan jquery. Ada pula bagian front-end menggunakan Vue JS hanya menambahkan fitur tambahan dan perubahan. "
+    },
     {
         img: "public/img/pengalaman/hmi.jpg",
         title: "HmI Komisariat UNIBBA",
