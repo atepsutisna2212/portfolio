@@ -171,6 +171,31 @@ function setDataKeahlian() {
 //project
 const listDataProject = [
     {
+        img: "public/img/project/fmm-pa.png",
+        title: "Aplikasi Penilaian Karyawan",
+        content: "Aplikasi ini project dari perusahaan Pajar Mas Murni. Pada project ini ditugaskan untuk membuat aplikasi ini dari awal secara tim. Aplikasi ini digunakan untuk melakukan penilaian kepada karyawan secara online. Project ini dibuat menggunakan framework CodeIgniter 4 dan Bootstrap 5."
+    },
+    {
+        img: "public/img/project/replanish.png",
+        title: "Aplikasi Kompetisi",
+        content: "Aplikasi ini project dari perusahaan Toyota Astra Motor. Pada project ini ditugaskan dalam mengembangkan aplikasi ini untuk terkoneksi menggunakan WhatsApp dan Email serta pemindahan directory file ke S3 karena aplikasi ini akan di migrasi ke AWS. Project ini dibuat menggunakan framework .Net versi 4.8  dan Bootstrap 5."
+    },
+    {
+        img: "public/img/project/ttep.png",
+        title: "Aplikasi Magang Siswa",
+        content: "Aplikasi ini project dari perusahaan Toyota Astra Motor. Pada project ini ditugaskan untuk membuat aplikasi dari awal dan dilakukan secara tim. Aplikasi ini digunakan untuk pendataan sekolah, siswa dan dealer yang akan melakukan magang ke perusahaan TAM. Project ini dibuat menggunakan framework .Net Core 8  dan Bootstrap 5."
+    },
+    {
+        img: "public/img/project/bimbel.png",
+        title: "Aplikasi Bimbingan Belajar",
+        content: "Aplikasi ini digunakan untuk mendata peserta bimbingan online dan data pembayaran secara online di bimbingan belajar Brilliant Learning Center. Aplikasi ini dibuat menggunakan framework Laravel 8 dan Bootstrap 5"
+    },
+    {
+        img: "public/img/project/inventory.png",
+        title: "Aplikasi Inventory Kain",
+        content: "Aplikasi ini digunakan untuk mendata inventory kain terutama yang sudah terjual dan data kain yang dibeli secara online. Aplikasi ini dibuat menggunakan framework Laravel 8 dan Bootstrap 5"
+    },
+    {
         img: "public/img/project/1.png",
         title: "Aplikasi Penjadwalan Praktikum",
         content: "Aplikasi ini bisa menghindari menginput jadwal yang bentrok dan jika jadwal yang diinput bentrok maka akan muncul notifikasinya dan rekomendasi jadwal yang tidak akan bentrok. Aplikasi ini dibuat menggunakan framework CodeIgniter 3 dan Bootstrap 3."
@@ -185,16 +210,16 @@ const listDataProject = [
         title: "Aplikasi profil pramuka kwaran Ibun",
         content: "Pada aplikasi ini berisi data pramuka kwaran kecamatan Ibun. Digunakan untuk memudahkan dalam pendataan pramuka dan informasi antar pramuka sekecamatan Ibun. Aplikasi ini dibuat menggunakan bahasa pemrograman php native 7 dan Bootstrap 4."
     },
-    {
-        img: "public/img/project/4.png",
-        title: "Aplikasi pencatatan transaksi Garda Pest Control",
-        content: "Aplikasi ini dibuat untuk memudahkan mencatat pemasukan dan pengeluaran keuangan Garda Pest Control kemudian memudahkan untuk dibuat data laporan secara otomatis. Aplikasi ini dibuat menggunakan bahasa pemrograman php native 7 dan Bootstrap 4."
-    },
-    {
-        img: "public/img/project/5.png",
-        title: "Aplikasi penjualan ONETED Store",
-        content: "Aplikasi ini digunakan untuk mempublikasikan serta menjual produk ONETED Store kepada masyarakat luas secara online. Aplikasi ini dibuat menggunakan framework CodeIgniter 4 dan Bootstrap 4."
-    },
+    // {
+    //     img: "public/img/project/4.png",
+    //     title: "Aplikasi pencatatan transaksi Garda Pest Control",
+    //     content: "Aplikasi ini dibuat untuk memudahkan mencatat pemasukan dan pengeluaran keuangan Garda Pest Control kemudian memudahkan untuk dibuat data laporan secara otomatis. Aplikasi ini dibuat menggunakan bahasa pemrograman php native 7 dan Bootstrap 4."
+    // },
+    // {
+    //     img: "public/img/project/5.png",
+    //     title: "Aplikasi penjualan ONETED Store",
+    //     content: "Aplikasi ini digunakan untuk mempublikasikan serta menjual produk ONETED Store kepada masyarakat luas secara online. Aplikasi ini dibuat menggunakan framework CodeIgniter 4 dan Bootstrap 4."
+    // },
     // {
     //   img: "public/img/project/6.png",
     //   title: "Aplikasi Project Web",
@@ -271,7 +296,7 @@ const dataListPengalaman = [
 function setDataPengalaman() {
     const lokasi = document.querySelector('#listPengalaman');
     let data = '';
-    listDataProject.forEach(item => {
+    dataListPengalaman.forEach(item => {
         data += `
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
