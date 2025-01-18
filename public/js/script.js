@@ -171,6 +171,11 @@ function setDataKeahlian() {
 //project
 const listDataProject = [
     {
+        img: "public/img/project/ids1.png",
+        title: "Aplikasi DigiProc PLN ICON PLUS",
+        content: "Aplikasi ini project dari PLN Icon Plus. Pada project ini dalam pengembangan sprint 2. Ini adalah project Outsourching, saya ditugaskan bagian back-end pada tampilan dashboard ini. Project ini dilakukan remote dan onsite team sehinggu sekali ke Kantor Jamsostek PLN. Project ini dibuat menggunakan framework .Net Core 4 dan React JS."
+    },
+    {
         img: "public/img/project/fmm-pa.png",
         title: "Aplikasi Penilaian Karyawan",
         content: "Aplikasi ini project dari perusahaan Pajar Mas Murni. Pada project ini ditugaskan untuk membuat aplikasi ini dari awal secara tim. Aplikasi ini digunakan untuk melakukan penilaian kepada karyawan secara online. Project ini dibuat menggunakan framework CodeIgniter 4 dan Bootstrap 5."
@@ -266,6 +271,11 @@ function setDataProject() {
 
 //pengalaman
 const dataListPengalaman = [
+    {
+        img: "public/img/pengalaman/ids.jpeg",
+        title: "PT. Inovasi Dinamika Solusi",
+        content: "Pada Perusahaan ini saya sebagai Staff Web Programmer (2024). Disini saya bekerja dengan tim dan pengerjaan tugasnya fullstack bagian beck-end dengan framework bahasa pemrograman PHP atau .Net. Pada bagian front-end kebanyakan menggunakan VueJS. Pelaksanaan kerja saya bersama team dan ada pula project Out sourching"
+    },
     {
         img: "public/img/pengalaman/arkamaya.jpg",
         title: "PT. Arkamaya",
