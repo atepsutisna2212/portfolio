@@ -1,3 +1,5 @@
+import { cek } from "./list_data";
+console.log(cek)
 // hamburger
 const hamburger = document.querySelector('#hamburger')
 const navMenu = document.querySelector('#navMenu')
@@ -410,7 +412,7 @@ const listDataSosmed = [
     },
 ];
 
-function setDataSosmed(){
+function setDataSosmed() {
     const lokasi = document.querySelector('#listSosmedFooter');
     const lokasiHeader = document.querySelector('#listSosmedHeader');
     let data = '';
