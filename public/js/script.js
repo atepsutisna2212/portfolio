@@ -1,4 +1,4 @@
-import { cek } from "./list_data";
+import { cek } from "./list_data.js";
 console.log(cek)
 // hamburger
 const hamburger = document.querySelector('#hamburger')
