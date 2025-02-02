@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 id="header">Kepala</h2>
+    <p id="content">Pada keilmuan yang saya ambil pada pelatihan ini yaitu Junior Web Developer Kegiatan ini dimulai dari dari tahap pelatihan sampai pengujian sertifikasi Pada pelatihan ini belajar tentang pembuatan tampilan web dengan menggunakan HTML dan CSS Tampilan tersebut digabungkan dengan bahasa pemrograman PHP dan database MySQL Bahkan sampai menggunakan framework Bootstrap dan JQuery Pada tahap pengujian saya lolos dan mendapatkan sertifikasi BNSP.</p>
+    <h4 id="footer">kamu bagian bawahnya</h4>
+
+    <button onclick="translatePage('en')">Translate to English</button>
+    <button onclick="translatePage('id')">Translate to Indonesian</button>
+
+    <script>
+        function translatePage(targetLang) {
+            const elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, span, div"); // Pilih elemen teks
+
+            elements.forEach(element => {
+                const originalText = element.innerText.trim();
+                if (originalText.length > 0) { // Pastikan tidak menerjemahkan elemen kosong
+                    fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${targetLang}&dt=t&q=${encodeURIComponent(originalText)}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            element.innerText = data[0][0][0];
+                        })
+                        .catch(error => console.error("Translation error:", error));
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
