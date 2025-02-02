@@ -13,7 +13,7 @@ body {
 }
 
 .hamburger-line {
-  @apply w-[30px] h-[5px] my-2 block bg-dark dark:bg-white;
+  @apply w-[38px] h-[5px] my-2 block bg-dark dark:bg-white;
 }
 
 .hamburger-active>span:nth-child(1) {
@@ -43,4 +43,11 @@ body {
 
 #darkToggle:checked~label div.toggleCircle {
   @apply translate-x-3;
+}
+#setTranslate:checked~label div.toggleCircle {
+  @apply translate-x-3;
+}
+
+.translate{
+  @apply capitalize
 }
