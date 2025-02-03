@@ -1021,8 +1021,12 @@ video {
   font-weight: 500;
 }
 
-.uppercase {
-  text-transform: uppercase;
+.\!uppercase {
+  text-transform: uppercase !important;
+}
+
+.\!capitalize {
+  text-transform: capitalize !important;
 }
 
 .leading-relaxed {
@@ -1115,7 +1119,7 @@ body {
   margin-bottom: 0.5rem;
   display: block;
   height: 5px;
-  width: 30px;
+  width: 38px;
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
