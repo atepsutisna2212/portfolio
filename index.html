@@ -29,43 +29,43 @@
                     <a href="#home" class="font-bold text-lg text-primary block py-6">Atep Sutisna</a>
                 </div>
                 <div class="flex items-center px-4">
-                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 xl:hidden">
                         <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
                         <span class="hamburger-line transition duration-300 ease-in-out"> </span>
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left "> </span>
                     </button>
 
                     <nav id="navMenu"
-                        class="hidden bg-green-100 absolute py-5 lg:bg-white shadow-lg rounded-lg max-w-[250] w-1/2 lg:w-full right-0 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-slate-600 dark:shadow-slate-700 lg:dark:bg-transparent">
-                        <ul class="block lg:flex">
+                        class="hidden bg-green-100 absolute py-5 xl:bg-white shadow-xl rounded-xl max-w-[250] w-1/2 xl:w-full right-0 top-full xl:block xl:static xl:bg-transparent xl:max-w-full xl:shadow-none xl:rounded-none dark:bg-slate-600 dark:shadow-slate-700 xl:dark:bg-transparent">
+                        <ul class="block xl:flex">
                             <li class="group">
                                 <a href="#home"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white translate" data-lang="home">Beranda</a>
                             </li>
                             <li class="group">
                                 <a href="#about"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Tentang
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white translate" data-lang="about">Tentang
                                     Saya</a>
                             </li>
                             <li class="group">
                                 <a href="#portfolio"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white translate" data-lang="portfolio">Portfolio</a>
                             </li>
                             <li class="group">
                                 <a href="#keahlian"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Keahlian</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white translate" data-lang="skill">Keahlian</a>
                             </li>
                             <li class="group">
                                 <a href="#pendidikan"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Pendidikan</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white translate" data-lang="education">Pendidikan</a>
                             </li>
                             <li class="group">
                                 <a href="#pengalaman"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Pengalaman</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white translate" data-lang="experience">Pengalaman</a>
                             </li>
-                            <li class="lg:mt-0 mt-3 flex items-center pl-8">
+                            <li class="xl:mt-0 mt-3 flex items-center pl-8" title="Screen">
                                 <div class="flex">
-                                    <span class="mr-2 text-sm text-slate-500 dark:text-slate-300">light</span>
+                                    <span class="mr-2 text-sm text-slate-500 dark:text-slate-300 w-7 text-right">light</span>
                                     <input type="checkbox" name="" id="darkToggle" class="hidden">
                                     <label for="darkToggle">
                                         <div
@@ -75,7 +75,22 @@
                                             </div>
                                         </div>
                                     </label>
-                                    <span class="ml-2 text-sm text-slate-500 dark:text-slate-300">dark</span>
+                                    <span class="ml-2 text-sm text-slate-500 dark:text-slate-300 w-7">dark</span>
+                                </div>
+                            </li>
+                            <li class="xl:mt-0 mt-3 flex items-center pl-8" title="Language">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-slate-500 dark:text-slate-300 w-7 text-right">en</span>
+                                    <input type="checkbox" name="" id="setTranslate" class="hidden">
+                                    <label for="setTranslate">
+                                        <div
+                                            class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                            <div
+                                                class="toggleCircle h-4 w-4 rounded-full bg-white transition duration-200 ease-in-out">
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-500 dark:text-slate-300 w-7">id</span>
                                 </div>
                             </li>
                         </ul>
@@ -94,13 +109,13 @@
                     <h1 class="text-base font-semibold text-teal-500 lg:text-2xl md:text-xl">Web Programmer <span
                             class="block font-bold text-dark lg:text-4xl dark:text-cyan-300">Atep Sutisna, S.Kom</span>
                     </h1>
-                    <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text-2xl ">UNIBBA | S1 Teknik Informatika</h2>
-                    <p class="font-medium text-slate-400 mb-10 leading-relaxed">Mempelajari dan mengimplementasikan
+                    <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text-2xl" data-lang="major">UNIBBA | S1 Teknik Informatika</h2>
+                    <p class="font-medium text-slate-400 mb-10 leading-relaxed" data-lang="major_detail">Mempelajari dan mengimplementasikan
                         <span class="text-dark font-bold dark:text-white">ilmu komputer fokus pada aplikasi web</span>
                     </p>
 
                     <a href="https://wa.me/6285320058217?text=Assalamu%27alaikum%20Atep%20Sutisna" target="_blank"
-                        class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi
+                        class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out translate" data-lang="call">Hubungi
                         saya</a>
                 </div>
 
@@ -121,13 +136,13 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
-                    <h4 class="font-bold uppercase text-primary text-lg mb-4">Tentang saya</h4>
+                    <h4 class="font-bold !uppercase text-primary text-lg mb-4 translate" data-lang="about">Tentang saya</h4>
                     <h3 class="font-bold text-black text-2xl mb-4 max-w-md lg:text-3xl dark:text-white ">Atep
                         Sutisna,
                         S.Kom
                     </h3>
                     <p
-                        class="font-medium text-base text-secondary max-w-3xl lg:text-lg text-justify  dark:text-slate-400">
+                        class="font-medium text-base text-secondary max-w-3xl lg:text-lg text-justify  dark:text-slate-400" data-lang="about_detail1">
                         S1 jurusan teknik infomatika kampus Universitas Bale Bandung yang lulus pada tahun 2022. Pernah
                         berpengalaman kerja sebagai <b>Web Programmer</b> di perusahaan Software House. Tools yang pernah
                         digunakan dalam membuat aplikasi berbasis web. Dari sisi Back-end menggunakan bahsa pemrograman PHP dengan framework Laravel dan CodeIgniter, bahasa pmrograman .Net menggunakan versi Net 4.8 dan .Net Core. Dari sisi Front-end menggunakan HTML, CSS, JavaScript, JQuery serta beberapa library css seperti Bootstrap dan Tailwind, adapun menggunakan framework yang pernah di garap menggunakan VueJs. Aktif mengikuti seminar
@@ -139,9 +154,9 @@
                             class="font-bold text-primary">dicoding</a>.</p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
-                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Kerja tim
+                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white !capitalize" data-lang="team">Kerja tim
                     </h3>
-                    <p class="font-medium text-base text-secondary mb-6 lg:text-lg text-justify dark:text-slate-400">
+                    <p class="font-medium text-base text-secondary mb-6 lg:text-lg text-justify dark:text-slate-400" data-lang="team_detail">
                         Berpengalaman dalam kerja dalam tim, salah satunya kerja tim menyelesaikan project di perusahaan sebagai fullstack developer . Dalam organisasi <a
                             href="https://id.wikipedia.org/wiki/Himpunan_Mahasiswa_Islam" target="_blank"
                             class="font-bold text-green-800">Himpunan mahasiswa Islam</a>
@@ -168,9 +183,9 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">Project</h2>
-                    <p class="font-medium text-lg text-secondary dark:text-slate-300">Project ini berisi pengalaman saya
+                    <h4 class="font-semibold text-lg text-primary mb-2 translate">Portfolio</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white translate">Project</h2>
+                    <p class="font-medium text-lg text-secondary dark:text-slate-300" data-lang="portfolio_detail">Project ini berisi pengalaman saya
                         mengenai apa yang saya kerjakan seperti pengalaman kerja, kegiatan organisasi, freelance, tugas kampus, latihan
                         dan lain sebagainya. </p>
                 </div>
@@ -187,10 +202,10 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class="mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Keahlian</h4>
-                    <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-dark">Software yang
+                    <h4 class="font-semibold text-lg text-primary mb-2 translate" data-lang="skill">Keahlian</h4>
+                    <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-dark" data-lang="skill_detail1">Software yang
                         saya kuasai.</h2>
-                    <p class="font-medium text-lg text-secondary md:text-lg">Software tersebut merupakan alat yang biasa
+                    <p class="font-medium text-lg text-secondary md:text-lg" data-lang="skill_detail2">Software tersebut merupakan alat yang biasa
                         digunakan.</p>
                 </div>
             </div>
@@ -207,10 +222,10 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Pendidikan</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Riwayat
+                    <h4 class="font-semibold text-lg text-primary mb-2 translate" data-lang="education">Pendidikan</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white translate" data-lang="education_detail1">Riwayat
                         pendidikan</h2>
-                    <p class="font-medium text-lg text-secondary md:text-lg dark:text-slate-300">Tempat menimba ilmu
+                    <p class="font-medium text-lg text-secondary md:text-lg dark:text-slate-300" data-lang="education_detail2">Tempat menimba ilmu
                         yang selama ini saya tempuh di SLTA dan perguruan tinggi.</p>
                 </div>
             </div>
@@ -227,9 +242,9 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Pengalaman</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">Pengalaman yang pernah dilakukan</h2>
-                    <p class="font-medium text-lg text-secondary dark:text-slate-200">Dimulai dari perusahaan, kegiatan
+                    <h4 class="font-semibold text-lg text-primary mb-2 translate" data-lang="experience">Pengalaman</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white first-letter:uppercase" data-lang="experience_detail1">Pengalaman yang pernah dilakukan</h2>
+                    <p class="font-medium text-lg text-secondary dark:text-slate-200" data-lang="experience_detail2">Dimulai dari perusahaan, kegiatan
                         organisasi,
                         kepanitian dan juga pelatihan.</p>
                 </div>

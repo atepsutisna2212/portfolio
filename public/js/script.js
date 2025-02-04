@@ -1,4 +1,5 @@
 import { listDataKeahlian, listDataProject, listDataPendidikan, listDataSosmed, dataListPengalaman } from "./list_data.js";
+import { translatePage, changeLanguage } from "./translate.js";
 // hamburger
 const hamburger = document.querySelector('#hamburger')
 const navMenu = document.querySelector('#navMenu')
@@ -62,24 +63,25 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
     darkToggle.checked = false
 }
 
-
-function setDataKeahlian() {
+//skill
+function setDataKeahlian(lang = 'id') {
     const lokasi = document.querySelector('#listKeahlian');
     let data = '';
     listDataKeahlian.forEach(item => {
+        const content = lang == 'en' ? item.content_en : item.content;
+        const baca = lang == 'en' ? "Read more" : `Baca selengkapnya`;
         data += `
                  <div class="w-full px-4 md:w-1/2 xl:w-1/3 ">
                     <div class="bg-white dark:bg-slate-700 rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="${item.img}" alt="" class="w-full bg-white">
+                        <img src="${item.img}" alt="" class="w-full bg-white hover:shadow-lg">
                         <div class="py-8 px-6">
                             <h3
                                 class=" mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">
                                 ${item.title}</h3>
                             <p class="font-medium text-secondary text-base mb-6 text-justify dark:text-slate-300">
-                                ${item.content}</p>
+                                ${content}</p>
                             <a href="${item.link}" target="_blank"
-                                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca
-                                selengkapnya</a>
+                                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">${baca}</a>
                         </div>
                     </div>
                 </div>
@@ -89,17 +91,19 @@ function setDataKeahlian() {
 }
 
 //project
-function setDataProject() {
+function setDataProject(lang = 'id') {
     const lokasi = document.querySelector('#listProject');
     let data = '';
     listDataProject.forEach(item => {
+        const content = lang == 'en' ? item.content_en : item.content;
+        const title = lang == 'en' ? item.title_en : item.title;
         data += `
                 <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
+                    <div class="rounded-md shadow-md overflow-hidden hover:shadow-lg">
                         <img src="${item.img}" alt="" class="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 dark:text-white">${item.title}</h3>
-                    <p class="font-medium text-base text-secondary text-justify dark:text-slate-300">${item.content}</p>
+                    <h3 class="font-semibold text-xl text-dark mt-5 dark:text-white">${title}</h3>
+                    <p class="font-medium text-base text-secondary text-justify dark:text-slate-300">${content}</p>
                 </div>
                  `;
     });
@@ -107,17 +111,19 @@ function setDataProject() {
 }
 
 //pengalaman
-function setDataPengalaman() {
+function setDataPengalaman(lang = 'id') {
     const lokasi = document.querySelector('#listPengalaman');
     let data = '';
     dataListPengalaman.forEach(item => {
+        const title = lang == 'en' ? item.title_en : item.title;
+        const content = lang == 'en' ? item.content_en : item.content;
         data += `
                 <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
+                    <div class="rounded-md shadow-md overflow-hidden hover:shadow-lg">
                         <img src="${item.img}" alt="" class="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 dark:text-white">${item.title}</h3>
-                    <p class="font-medium text-base text-secondary text-justify dark:text-black">${item.content}</p>
+                    <h3 class="font-semibold text-xl text-dark mt-5 dark:text-white">${title}</h3>
+                    <p class="font-medium text-base text-secondary text-justify dark:text-black">${content}</p>
                 </div>
                  `;
     });
@@ -125,21 +131,23 @@ function setDataPengalaman() {
 }
 
 //pendidikan
-function setDataPendidikan() {
+function setDataPendidikan(lang = 'id') {
     const lokasi = document.querySelector('#listPendidikan');
     let data = '';
+    const baca = lang == 'en' ? `Read more` : `Baca selengkapnya`;
     listDataPendidikan.forEach(item => {
+        const content = lang == 'en' ? item.content_en : item.content;
+        const title = lang == 'en' ? item.title_en : item.title;
         data += `
                 <div class="w-full px-4 md:w-1/2 xl:w-1/3 ">
                     <div class="bg-white dark:bg-slate-700 rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="${item.img}" height="200" alt="" class="w-full">
+                        <img src="${item.img}" height="200" alt="" class="w-full hover:shadow-lg">
                         <div class="py-8 px-6">
                             <h3 class=" mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">
-                                ${item.title}</h3>
-                            <p class="font-medium text-secondary text-base mb-6 text-justify dark:text-slate-300">${item.content}</p>
+                                ${title}</h3>
+                            <p class="font-medium text-secondary text-base mb-6 text-justify dark:text-slate-300">${content}</p>
                             <a href="${item.link}"
-                                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca
-                                selengkapnya</a>
+                                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">${baca}</a>
                         </div>
                     </div>
                 </div>
@@ -166,8 +174,52 @@ function setDataSosmed() {
 }
 
 //call function
-setDataKeahlian();
-setDataProject();
-setDataPengalaman();
-setDataPendidikan();
-setDataSosmed();
+// setDataKeahlian('en');
+// setDataProject();
+// setDataPengalaman();
+// setDataPendidikan();
+// setDataSosmed();
+
+const translate = document.querySelector('#setTranslate');
+//function togle
+translate.addEventListener('click', function () {
+    console.log('cek bahasaa', translate.checked)
+    if (translate.checked) {
+        callAll();
+    } else {
+        callAll('en')
+    }
+})
+
+// changeLanguage('en');
+
+function callAll(lang = 'id') {
+    changeLanguage(lang);
+    setDataKeahlian(lang);
+    setDataProject(lang);
+    setDataPengalaman(lang);
+    setDataPendidikan(lang);
+    setDataSosmed();
+    langTitle(lang)
+}
+
+
+const language = navigator.language || navigator.userLanguage;
+if (language == 'id') {
+    callAll('id');
+    translate.checked = true;
+    langTitle()
+} else {
+    callAll('en');
+    langTitle('en')
+}
+
+function langTitle(lang = 'id') {
+    const screen = lang == 'id' ? 'Layar' : 'Screen';
+    const language = lang == 'id' ? 'Bahasa' : 'Language';
+    const darkToggle = document.getElementById('darkToggle');
+    const liDark = darkToggle.closest('li');
+    const liTranslate = translate.closest('li');
+    liDark.setAttribute('title', screen);
+    liTranslate.setAttribute('title', language);
+}
