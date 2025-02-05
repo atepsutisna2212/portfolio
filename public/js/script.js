@@ -18,6 +18,10 @@ window.onscroll = function () {
 
     if (window.pageYOffset > fixedNav) {
         header.classList.add('navbar-fixed')
+
+        header.classList.remove('bg-slate-100')
+        header.classList.remove('dark:bg-slate-700')
+
         console.log('navbar')
 
         toTop.classList.remove('hidden')
@@ -25,6 +29,9 @@ window.onscroll = function () {
     } else {
         header.classList.remove('navbar-fixed')
         console.log('remove navbar')
+
+        header.classList.add('bg-slate-100')
+        header.classList.add('dark:bg-slate-700')
 
         toTop.classList.remove('flex')
         toTop.classList.add('hidden')
