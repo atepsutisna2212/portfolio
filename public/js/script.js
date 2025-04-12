@@ -1,5 +1,5 @@
 import { listDataKeahlian, listDataProject, listDataPendidikan, listDataSosmed, dataListPengalaman } from "./list_data.js";
-import { translatePage, changeLanguage } from "./translate.js";
+import { changeLanguage } from "./translate.js";
 // hamburger
 const hamburger = document.querySelector('#hamburger')
 const navMenu = document.querySelector('#navMenu')
@@ -7,7 +7,6 @@ const navMenu = document.querySelector('#navMenu')
 hamburger.addEventListener('click', function () {
     hamburger.classList.toggle('hamburger-active')
     navMenu.classList.toggle('hidden')
-    // alert('ada')
 })
 
 // navbar fixed
@@ -22,13 +21,10 @@ window.onscroll = function () {
         header.classList.remove('bg-slate-100')
         header.classList.remove('dark:bg-slate-700')
 
-        console.log('navbar')
-
         toTop.classList.remove('hidden')
         toTop.classList.add('flex')
     } else {
         header.classList.remove('navbar-fixed')
-        console.log('remove navbar')
 
         header.classList.add('bg-slate-100')
         header.classList.add('dark:bg-slate-700')
@@ -55,11 +51,9 @@ darkToggle.addEventListener('click', function () {
     if (darkToggle.checked) {
         html.classList.add('dark')
         localStorage.theme = 'dark'
-        // console.log(html.)
     } else {
         html.classList.remove('dark')
         localStorage.theme = 'light'
-        // console.log(html.attributes.classList)
     }
 })
 
@@ -180,25 +174,14 @@ function setDataSosmed() {
     lokasiHeader.innerHTML = data;
 }
 
-//call function
-// setDataKeahlian('en');
-// setDataProject();
-// setDataPengalaman();
-// setDataPendidikan();
-// setDataSosmed();
-
 const translate = document.querySelector('#setTranslate');
-//function togle
 translate.addEventListener('click', function () {
-    console.log('cek bahasaa', translate.checked)
     if (translate.checked) {
         callAll();
     } else {
         callAll('en')
     }
 })
-
-// changeLanguage('en');
 
 function callAll(lang = 'id') {
     changeLanguage(lang);
@@ -209,7 +192,6 @@ function callAll(lang = 'id') {
     setDataSosmed();
     langTitle(lang)
 }
-
 
 const language = navigator.language || navigator.userLanguage;
 if (language == 'id') {

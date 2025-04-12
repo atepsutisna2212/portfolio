@@ -1,9 +1,7 @@
 export function translatePage(targetLang) {
     const elements = document.querySelectorAll(".translate"); // Pilih elemen teks
-    console.log(targetLang, elements)
     elements.forEach(element => {
         const originalText = element.innerText.trim();
-        console.log(originalText)
         if (originalText.length > 0) { // Pastikan tidak menerjemahkan elemen kosong
             fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${targetLang}&dt=t&q=${encodeURIComponent(originalText)}`)
                 .then(response => response.json())

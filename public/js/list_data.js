@@ -300,7 +300,7 @@ export const listDataSosmed = [
     },
     {
         content_en: ``,
-        link: "https://www.instagram.com/atepsut2212/",
+        link: "https://www.instagram.com/atepsut7/",
         img: `
               <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
