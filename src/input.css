@@ -41,6 +41,11 @@ body {
   /* backdrop-filter: blur(5px); */
 }
 
+.navbar-fixed2 {
+  @apply z-[100] shad bg-white bg-opacity-50 backdrop-blur-sm dark:bg-dark dark:bg-opacity-50;
+  /* backdrop-filter: blur(5px); */
+}
+
 #darkToggle:checked~label div.toggleCircle {
   @apply translate-x-3;
 }

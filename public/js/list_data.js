@@ -94,6 +94,13 @@ export const listDataKeahlian = [
 
 export const listDataProject = [
     {
+        img: "public/img/project/muqu.png",
+        title_en: `Muqu (Mutaba'ah Qur'an) App`,
+        title: "Aplikasi Muqu (Mutaba'ah Qur'an)",
+        content_en: `Muqu application is an application that will be used by Al-Qur'an memorizers to connect with mentors from an agency and will guide their memorization. This application will be used by agencies that have Quran memorization programs. In this project I continued the development of the previous project. In this project I was assigned to bug checking and further development. This project uses Laravel framework and Vue JS.`,
+        content: "Aplikasi Muqu adalah sebuah aplikasi yang akan digunakan oleh penghafal Al-Qur'an untuk terhubung dengan mentor dari suatu instansi dan akan membimbing hafalannya. Aplikasi ini akan digunakan oleh instansi yang memiliki program hafalan quran. Pada project ini saya melanjutkan pengembangan dari project sebelumnya. Pada project ini saya ditugaskan untuk pemeriksaan bug dan pengembangkan lanjutan. Pada project ini menggunakan framework Laravel dan Vue JS."
+    },
+    {
         img: "public/img/project/ids1.png",
         title_en: `DigiProc PLN ICON PLUS App`,
         title: "Aplikasi DigiProc PLN ICON PLUS",
@@ -263,7 +270,7 @@ export const listDataPendidikan = [
     {
         img: "https://i.ytimg.com/vi/rH4AAbb6JDs/mqdefault.jpg",
         title: "Universitas Bale Bandung",
-        title_en:"Bale Bandung University",
+        title_en: "Bale Bandung University",
         content: "Pada kampus Universitas Bale Bandung saya mengambil jurusan S1 Teknik Informatika. Disini saya banyak belajar tentang meneliti dan membuat aplikasi berbasis web. Pembelajaran dikampus membuat saya terbiasa untuk mengerjakan tugas dengan jangka waktu yang ditentukan dan harus memahami materi dari awal secara teori dan praktek.",
         content_en: `On the campus of Bale Bandung University I majored in S1 Informatics Engineering. Here I learned a lot about researching and creating web-based applications. Learning at the campus made me accustomed to doing assignments with a specified time period and having to understand the material from the beginning in theory and practice.`,
         link: "https://unibba.ac.id/"
