@@ -14,7 +14,7 @@ export const listDataKeahlian = [
         link: "https://dotnet.microsoft.com/id-id/learn/dotnet/what-is-dotnet"
     },
     {
-        img: "https://belajarapaaja.net/wp-content/uploads/2023/02/JQuery-Logo.wine_.png",
+        img: "https://www.webhozz.com/blog/wp-content/uploads/2019/07/jQuery-featured-duniailkom.jpg",
         title: "Jquery",
         content: "jQuery adalah pustaka JavaScript yang cepat, kecil, dan kaya fitur. jQuery membuat hal-hal seperti traversal dan manipulasi dokumen HTML, penanganan event, animasi, dan Ajax menjadi jauh lebih mudah dengan API yang mudah digunakan dan berfungsi di berbagai browser. Dengan kombinasi fleksibilitas dan ekstensibilitas, jQuery telah mengubah cara jutaan orang menulis JavaScript.",
         content_en: `jQuery is a fast, small, and feature-rich JavaScript library. jQuery makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much easier with an easy-to-use API that works across multiple browsers. With its combination of flexibility and extensibility, jQuery has changed the way millions of people write JavaScript.`,
@@ -116,8 +116,8 @@ export const listDataProject = [
     },
     {
         img: "public/img/project/replanish.png",
-        title_en: `Competition App`,
-        title: "Aplikasi Kompetisi",
+        title_en: `Sustainability App`,
+        title: "Aplikasi Toyota Berbagi",
         content_en: `This application is a project of the Toyota Astra Motor company. In this project, we are assigned to develop this application to connect using WhatsApp and Email and move directory files to S3 because this application will be migrated to AWS. This project was created using the .Net framework version 4.8 and Bootstrap 5.`,
         content: "Aplikasi ini project dari perusahaan Toyota Astra Motor. Pada project ini ditugaskan dalam mengembangkan aplikasi ini untuk terkoneksi menggunakan WhatsApp dan Email serta pemindahan directory file ke S3 karena aplikasi ini akan di migrasi ke AWS. Project ini dibuat menggunakan framework .Net versi 4.8  dan Bootstrap 5."
     },
@@ -163,6 +163,28 @@ export const listDataProject = [
         content_en: `This application contains data on Ibun sub-district scouts. Used to facilitate the collection of scout data and information between scouts in Ibun sub-district. This application was created using the php native 7 programming language and Bootstrap 4.`,
         content: "Pada aplikasi ini berisi data pramuka kwaran kecamatan Ibun. Digunakan untuk memudahkan dalam pendataan pramuka dan informasi antar pramuka sekecamatan Ibun. Aplikasi ini dibuat menggunakan bahasa pemrograman php native 7 dan Bootstrap 4."
     },
+    
+    {
+        img: "public/img/project/d1.png",
+        title_en: `Bandung Regency E-Sport Tournament Pamphlet`,
+        title: "Pamplet Turnamen E-Sport Kab. Bandung",
+        content_en: `This design will later be made into pamphlets to publicize to the community and students. So that this pamphlet shows that there will be E-sport tournament activities. With short and clear terms and conditions. This pamphlet was created using the CorelDraw X7 application.`,
+        content: "Desain ini nantinya akan dibuat pamplet untuk mempublikasikan kepada masyarakat dan siswa. Sehingga dengan pamplet ini menunjukan bahwa akan melakukan kegiatan turnamen E-sport. Dengan syarat dan ketentuan secara singkat padat jelas. Pamplet ini dibuat menggunakan aplikasi CorelDraw X7."
+    },
+    {
+        img: "public/img/project/d3.png",
+        title_en: `Design of symbolic board and E-sport certificate`,
+        title: "Desain papan simbolis dan sertifikat E-sport",
+        content_en: `This design will be used for the symbolic board as well as the award certificate to the winner of the e-sport tournament. This design was created using Canva.`,
+        content: "Desain ini akan digunakan untuk papan simbolis serta piagam penghargaan kepada pemenang turnamen e-sport. Desain ini dibuat menggunakan Canva."
+    },
+    {
+        img: "public/img/project/d2.png",
+        title_en: `Happy Ramadan pamphlet design`,
+        title: "Desain pamplet selamat hari ramadhan",
+        content_en: `This design will be used to share to the internet. This design was created using the CorelDraw X7 application.`,
+        content: "Desain ini akan digunakan untuk dishare ke internet. Desain ini dibuat menggunakan aplikasi CorelDraw X7."
+    },
     // {
     //     img: "public/img/project/4.png",
     //    title_en:``,
@@ -191,27 +213,6 @@ export const listDataProject = [
     //  content_en:``,
     //  content: "Aplikasi ini digunakan untuk menjual tiket secara online dengan ID tertentu tiap tiketnya untuk di check in ketika konser berlangsung. Aplikasi ini dibuat menggunakan framework Laravel 8 dan Bootstrap 5."
     // },
-    {
-        img: "public/img/project/d1.png",
-        title_en: `Bandung Regency E-Sport Tournament Pamphlet`,
-        title: "Pamplet Turnamen E-Sport Kab. Bandung",
-        content_en: `This design will later be made into pamphlets to publicize to the community and students. So that this pamphlet shows that there will be E-sport tournament activities. With short and clear terms and conditions. This pamphlet was created using the CorelDraw X7 application.`,
-        content: "Desain ini nantinya akan dibuat pamplet untuk mempublikasikan kepada masyarakat dan siswa. Sehingga dengan pamplet ini menunjukan bahwa akan melakukan kegiatan turnamen E-sport. Dengan syarat dan ketentuan secara singkat padat jelas. Pamplet ini dibuat menggunakan aplikasi CorelDraw X7."
-    },
-    {
-        img: "public/img/project/d3.png",
-        title_en: `Design of symbolic board and E-sport certificate`,
-        title: "Desain papan simbolis dan sertifikat E-sport",
-        content_en: `This design will be used for the symbolic board as well as the award certificate to the winner of the e-sport tournament. This design was created using Canva.`,
-        content: "Desain ini akan digunakan untuk papan simbolis serta piagam penghargaan kepada pemenang turnamen e-sport. Desain ini dibuat menggunakan Canva."
-    },
-    {
-        img: "public/img/project/d2.png",
-        title_en: `Happy Ramadan pamphlet design`,
-        title: "Desain pamplet selamat hari ramadhan",
-        content_en: `This design will be used to share to the internet. This design was created using the CorelDraw X7 application.`,
-        content: "Desain ini akan digunakan untuk dishare ke internet. Desain ini dibuat menggunakan aplikasi CorelDraw X7."
-    }
 ];
 
 export const dataListPengalaman = [
