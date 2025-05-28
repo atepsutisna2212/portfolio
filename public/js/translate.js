@@ -22,7 +22,7 @@ const translations = {
         education: "Education",
         experience: "Experience",
         major: "UNIBBA | S1 Informatics Engineering",
-        major_detail:`Studying and implementing
+        major_detail: `Studying and implementing
                         <span class="text-dark font-bold dark:text-white"> computer science with a focus on web applications.</span>`,
         call: "Call Me",
         about_detail1: `S1 majoring in infomatics engineering at Bale Bandung University campus which graduated in 2022. I have experience working as a <b>Web Programmer</b> in a Software House company. Tools that have been used in creating web-based applications. From the Back-end side using PHP programming language with Laravel and CodeIgniter frameworks, .Net programming language using Net 4.8 and .Net Core versions. From the Front-end side using HTML, CSS, JavaScript, JQuery and several css libraries such as Bootstrap and Tailwind, while using a framework that has been worked on using VueJs. Actively participates in campus and off-campus seminars, also actively participates in training <a
@@ -38,6 +38,8 @@ const translations = {
         education_detail2: `The place where I have been studying in high school and college.`,
         experience_detail1: `experiences that have been done`,
         experience_detail2: `Starting from companies, organizational activities, committee and also training.`,
+        cv: ` Show CV`,
+        portfolio_project: `Show Portfolio Project`,
     },
     id: {
         home: "Beranda",
@@ -47,7 +49,7 @@ const translations = {
         education: "Pendidikan",
         experience: "Pengalaman",
         major: "UNIBBA | S1 Teknik Informatika",
-        major_detail:`Mempelajari dan mengimplementasikan
+        major_detail: `Mempelajari dan mengimplementasikan
                         <span class="text-dark font-bold dark:text-white">ilmu komputer fokus pada aplikasi web</span>`,
         call: "Hubungi saya",
         about_detail1: `S1 jurusan teknik infomatika kampus Universitas Bale Bandung yang lulus pada tahun 2022. Saya pernah berpengalaman kerja sebagai <b>Web Programmer</b> di perusahaan Software House. Tools yang pernah digunakan dalam membuat aplikasi berbasis web. Dari sisi Back-end menggunakan bahsa pemrograman PHP dengan framework Laravel dan CodeIgniter, bahasa pmrograman .Net menggunakan versi Net 4.8 dan .Net Core. Dari sisi Front-end menggunakan HTML, CSS, JavaScript, JQuery serta beberapa library css seperti Bootstrap dan Tailwind, adapun menggunakan framework yang pernah di garap menggunakan VueJs. Aktif mengikuti seminar kampus dan luar kampus, aktif pula mengikuti pelatihan<a
@@ -80,6 +82,8 @@ const translations = {
         experience_detail2: `Dimulai dari perusahaan, kegiatan
                         organisasi,
                         kepanitian dan juga pelatihan.`,
+        cv: `Tampilkan CV`,
+        portfolio_project: `Tampilkan Portfolio Project`,
     }
 };
 

@@ -334,3 +334,14 @@ export const listDataSosmed = [
             `
     },
 ];
+
+export const file={
+    id:{
+        cv: "public/file/in/indo CV Atep Sut 6-5-25.pdf",
+        portfolio: "public/file/experience-project.pdf",
+    },
+    en:{
+        cv: "public/file/en/eng CV Atep Sut 6-5-25.pdf",
+        portfolio: "public/file/experience-project.pdf",
+    }
+}

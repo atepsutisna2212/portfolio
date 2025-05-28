@@ -1,8 +1,10 @@
-import { listDataKeahlian, listDataProject, listDataPendidikan, listDataSosmed, dataListPengalaman } from "./list_data.js";
+import { listDataKeahlian, listDataProject, listDataPendidikan, listDataSosmed, dataListPengalaman, file } from "./list_data.js";
 import { changeLanguage } from "./translate.js";
 // hamburger
 const hamburger = document.querySelector('#hamburger')
 const navMenu = document.querySelector('#navMenu')
+
+let pickLanguage = '';
 
 hamburger.addEventListener('click', function () {
     hamburger.classList.toggle('hamburger-active')
@@ -174,6 +176,21 @@ function setDataSosmed() {
     lokasiHeader.innerHTML = data;
 }
 
+//view pdf
+function onViewCv(e) {
+    e.preventDefault();
+    const pdf = file[pickLanguage]['cv'];
+    window.open(pdf, '_blank');
+}
+document.getElementById("cv").addEventListener("click", onViewCv);
+
+function onViewPortfolio(e) {
+    e.preventDefault();
+    const pdf = file[pickLanguage]['portfolio'];
+    window.open(pdf, '_blank');
+}
+document.getElementById("portfolioProject").addEventListener("click", onViewPortfolio);
+
 const translate = document.querySelector('#setTranslate');
 translate.addEventListener('click', function () {
     if (translate.checked) {
@@ -204,6 +221,7 @@ if (language == 'id') {
 }
 
 function langTitle(lang = 'id') {
+    pickLanguage = lang;
     const screen = lang == 'id' ? 'Layar' : 'Screen';
     const language = lang == 'id' ? 'Bahasa' : 'Language';
     const darkToggle = document.getElementById('darkToggle');
