@@ -337,11 +337,11 @@ export const listDataSosmed = [
 
 export const file={
     id:{
-        cv: "public/file/in/indo_CV.pdf",
+        cv: "public/file/in/cv_indo.pdf",
         portfolio: "public/file/experience-project.pdf",
     },
     en:{
-        cv: "public/file/en/eng_CV.pdf",
+        cv: "public/file/en/cv_eng.pdf",
         portfolio: "public/file/experience-project.pdf",
     }
 }
