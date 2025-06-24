@@ -184,6 +184,13 @@ function onViewCv(e) {
 }
 document.getElementById("cv").addEventListener("click", onViewCv);
 
+function onViewCvAts(e) {
+    e.preventDefault();
+    const pdf = file[pickLanguage]['cv_ats'];
+    window.open(pdf, '_blank');
+}
+document.getElementById("cv_ats").addEventListener("click", onViewCvAts);
+
 function onViewPortfolio(e) {
     e.preventDefault();
     const pdf = file[pickLanguage]['portfolio'];

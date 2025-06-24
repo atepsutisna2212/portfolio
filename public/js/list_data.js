@@ -259,7 +259,7 @@ export const dataListPengalaman = [
         content: "Pada keilmuan yang saya ambil pada pelatihan ini yaitu Junior Web Developer. Kegiatan ini dimulai dari dari tahap pelatihan sampai pengujian sertifikasi. Pada pelatihan ini belajar tentang pembuatan tampilan web dengan menggunakan HTML dan CSS. Tampilan tersebut digabungkan dengan bahasa pemrograman PHP dan database MySQL. Bahkan sampai menggunakan framework Bootstrap dan JQuery. Pada tahap pengujian saya lolos dan mendapatkan sertifikasi BNSP."
     },
     {
-        img: "https://2.bp.blogspot.com/-vgouJ9ooEQw/XMb6DlduH1I/AAAAAAAAKt8/U53Fztpk8E46yOslbmLn0CIalxGWf-hygCLcBGAs/s1600/bpptik%2B%25282%2529.jpeg",
+        img: "public/img/pengalaman/bpptik.jpeg",
         title_en: `BPPTIK Online and Offline `,
         title: "Pelatihan BPPTIK Online Offline",
         content_en: `This training was Junior Graphic Design training and certification. In this training I learned a lot about making pamphlets and using Adobe Illustrator applications. This training was conducted for 2 weeks online. Then passed to the offline certification stage to the BPPTIK Cikarang building. At the testing stage I passed and received BNSP certification.`,
@@ -339,9 +339,11 @@ export const file={
     id:{
         cv: "public/file/in/cv_indo.pdf",
         portfolio: "public/file/experience-project.pdf",
+        cv_ats:"public/file/in/cv_ats_id.pdf"
     },
     en:{
         cv: "public/file/en/cv_eng.pdf",
         portfolio: "public/file/experience-project.pdf",
+        cv_ats:"public/file/en/cv_ats_en.pdf"
     }
 }

@@ -40,6 +40,7 @@ const translations = {
         experience_detail2: `Starting from companies, organizational activities, committee and also training.`,
         cv: ` Show CV`,
         portfolio_project: `Show Portfolio Project`,
+        cv_ats:`Show CV ATS`
     },
     id: {
         home: "Beranda",
@@ -84,6 +85,7 @@ const translations = {
                         kepanitian dan juga pelatihan.`,
         cv: `Tampilkan CV`,
         portfolio_project: `Tampilkan Portfolio Project`,
+        cv_ats:`Tampilkan CV ATS`
     }
 };
 
