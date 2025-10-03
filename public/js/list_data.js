@@ -94,6 +94,13 @@ export const listDataKeahlian = [
 
 export const listDataProject = [
     {
+        img: "public/img/project/ess.jpg",
+        title_en: `ESS (Employee Self Service) App`,
+        title: "Aplikasi ESS (Employee Self Service)",
+        content_en: `ESS application is an application that will be used by employees to manage their personal information, attendance, and leave requests. This application will be used by companies that want to streamline their HR processes. In this project I as a Back end continued the development of the previous project. In this project I was assigned to bug checking and further development. This project uses Laravel framework and Vue JS.`,
+        content: "Aplikasi ESS adalah sebuah aplikasi yang akan digunakan oleh karyawan untuk mengelola informasi pribadi, presensi dan cuti izin mereka. Aplikasi ini akan digunakan oleh perusahaan yang ingin memperlancar proses HR mereka. Pada project ini saya sebagai Back end yang melanjutkan pengembangan dari project sebelumnya. Pada project ini saya ditugaskan untuk pemeriksaan bug dan pengembangkan lanjutan. Pada project ini menggunakan framework Net Core dan Flutter."
+    },
+    {
         img: "public/img/project/muqu.png",
         title_en: `Muqu (Mutaba'ah Qur'an) App`,
         title: "Aplikasi Muqu (Mutaba'ah Qur'an)",
@@ -163,7 +170,7 @@ export const listDataProject = [
         content_en: `This application contains data on Ibun sub-district scouts. Used to facilitate the collection of scout data and information between scouts in Ibun sub-district. This application was created using the php native 7 programming language and Bootstrap 4.`,
         content: "Pada aplikasi ini berisi data pramuka kwaran kecamatan Ibun. Digunakan untuk memudahkan dalam pendataan pramuka dan informasi antar pramuka sekecamatan Ibun. Aplikasi ini dibuat menggunakan bahasa pemrograman php native 7 dan Bootstrap 4."
     },
-    
+
     {
         img: "public/img/project/d1.png",
         title_en: `Bandung Regency E-Sport Tournament Pamphlet`,
@@ -216,6 +223,13 @@ export const listDataProject = [
 ];
 
 export const dataListPengalaman = [
+    {
+        img: "public/img/pengalaman/adidata.jpg",
+        title_en: `PT. Adidata Infomatika`,
+        title: "PT. Adidata Infomatika",
+        content_en: `In this company I am a Staff Software Engineer (2025). Here I work with a team and work on beck-end tasks with .Net Core programming language frameworks.My work with the team and the project I am working on at this company is the ESS (Employee Self Service) internal project.`,
+        content: "Pada Perusahaan ini saya sebagai Staff Software Enginer (2025). Disini saya bekerja dengan tim dan pengerjaan tugasnya bagian beck-end dengan framework .Net Core. Pelaksanaan kerja saya bersama team dan project yang saya garap di perusahaan ini yaitu project internak-l ESS(Employee Self Service)"
+    },
     {
         img: "public/img/pengalaman/ids.jpeg",
         title_en: `PT. Inovasi Dinamika Solusi`,
@@ -335,15 +349,15 @@ export const listDataSosmed = [
     },
 ];
 
-export const file={
-    id:{
+export const file = {
+    id: {
         cv: "public/file/id/cv_indo.pdf",
         portfolio: "public/file/experience-project.pdf",
-        cv_ats:"public/file/id/cv_ats_id.pdf"
+        cv_ats: "public/file/id/cv_ats_id.pdf"
     },
-    en:{
+    en: {
         cv: "public/file/en/cv_eng.pdf",
         portfolio: "public/file/experience-project.pdf",
-        cv_ats:"public/file/en/cv_ats_en.pdf"
+        cv_ats: "public/file/en/cv_ats_en.pdf"
     }
 }
