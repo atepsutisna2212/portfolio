@@ -337,9 +337,9 @@ export const listDataSosmed = [
 
 export const file={
     id:{
-        cv: "public/file/in/cv_indo.pdf",
+        cv: "public/file/id/cv_indo.pdf",
         portfolio: "public/file/experience-project.pdf",
-        cv_ats:"public/file/in/cv_ats_id.pdf"
+        cv_ats:"public/file/id/cv_ats_id.pdf"
     },
     en:{
         cv: "public/file/en/cv_eng.pdf",
