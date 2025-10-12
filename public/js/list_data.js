@@ -49,7 +49,7 @@ export const listDataKeahlian = [
         link: "https://vuejs.org/"
     },
     {
-        img: "https://res.cloudinary.com/practicaldev/image/fetch/s--LTUFkuK5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://imgur.com/Mj3H69v.png",
+        img: "https://designmodo.com/wp-content/uploads/2021/03/bootstrap-5-layout.jpg",
         title: "Bootstrap",
         content: "Bootstrap dikelola oleh tim kecil pengembang di GitHub. Kami aktif mencari untuk mengembangkan tim ini dan ingin mendengar dari Anda jika Anda tertarik dengan CSS dalam skala besar, menulis dan memelihara plugin vanilla JavaScript, dan meningkatkan perkakas bangunan proses untuk kode frontend.",
         content_en: `Bootstrap is maintained by a small team of developers on GitHub. We are actively looking to grow this team and would like to hear from you if you are interested in CSS at scale, writing and maintaining vanilla JavaScript plugins, and improving process building tools for frontend code.`,
@@ -63,7 +63,7 @@ export const listDataKeahlian = [
         link: "https://tailwindcss.com/"
     },
     {
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7GmH1THzbyRrocsVSVceq5GcA_HnDWgxr0w&s",
+        img: "https://course-net.com/wp-content/uploads/2023/03/sta-je-html.jpeg",
         title: "HTML (Hypertext Markup Language)",
         content: "Hypertext Markup Language atau HTML adalah bahasa markup standar yang digunakan untuk membuat halaman website dan aplikasi web. Sejarah HTML diciptakan oleh Tim Berners-Lee, seorang ahli fisika di lembaga penelitian CERN yang berlokasi di Swiss.",
         content_en: `Hypertext Markup Language or HTML is a standard markup language used to create web pages and web applications. The history of HTML was created by Tim Berners-Lee, a physicist at the CERN research institute located in Switzerland.`,
